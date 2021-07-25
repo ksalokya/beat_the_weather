@@ -1,0 +1,35 @@
+body {
+  background-image: url(https://images.pexels.com/photos/2086748/pexels-photo-2086748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+
+}
+
+.hero {
+  background-size: cover;
+  padding: 70px 0;
+  min-height: 350px;
+}
+
+.find-location {
+  position: relative;
+  margin-bottom: 70px;
+  border: none;
+}
+
+.find-location input {
+  width: 100%;
+  padding: 20px 50px 20px 20px;
+  background: #fff;
+}
+
+.find-location .sub-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+}
