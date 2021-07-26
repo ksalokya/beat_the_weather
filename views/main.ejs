@@ -28,6 +28,36 @@
 				</div>
 			</div>
 
+			<div class="forecast-table">
+				<div class="container">
+					<div class="forecast-container">
+
+						<div class="today forecast">
+
+							<div class="forecast-header">
+								<div class="day"><%=day%></div>
+								<div class="date"><%=date%></div>
+							</div>
+
+							<div class="forecast-content">
+								<div class="location"><%=city%></div>
+								<div class="location"><%=country%></div>
+								<div class="degree">
+									<div class="num"><%=temp%><sup>o</sup>C</div>
+									<div class="forecast-icon">
+										<img src="<%=linkIco%>" alt="" width=90>
+									</div>
+								</div>
+								<span><img src="images/umberella.png" alt=""><%=humidity%>%</span>
+								<span><img src="images/wind.png" alt=""><%=wind%> km/h</span>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<script
