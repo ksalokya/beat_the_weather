@@ -23,8 +23,6 @@ app.use(express.static("public"));
 var city = "Mumbai";
 const id= process.env.ID;
 
-//https://api.openweathermap.org/data/2.5/forecast?q=delhi&units=metric&appid=5a9f6e67135c64afe8167dbbba6512d2
-
 var weatherReport = [];
 const tempArr = [0,5,13,21,29,37];
 
