@@ -14,6 +14,9 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="images/favicon.ico">
 
+		<!-- Animate On Scroll CDN -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 		<!-- Css file -->
 		<link rel="stylesheet" href="css/style.css">
 
@@ -22,7 +25,7 @@
 
 		<div>
 
-			<div class="hero">
+			<div class="hero" data-aos="fade-down">
 				<div class="container">
 					<form action="/" method="post" class="find-location">
 						<input  type="text" name="search" class="form-control form-control-sm" placeholder="Enter City Name ...">
@@ -33,9 +36,9 @@
 
 			<div>
 				<div class="container">
-					<div class="forecast-container">
+					<div class="forecast-container" data-aos="fade-up">
 
-						<div class="today forecast">
+						<div class="today forecast" data-aos="flip-right"  data-aos-delay="300">
 							<div class="forecast-header">
 								<div class="day"><%=weatherData[0].day%></div>
 								<div class="date"><%=weatherData[0].date%></div>
@@ -56,7 +59,7 @@
 
 						<% for (var i=1; i<6; i++) { %>
 
-							<div class="forecast">
+							<div class="forecast" data-aos="flip-right"  data-aos-delay="500">
 								<div class="forecast-header">
 									<div class="day"><%=weatherData[i].day%></div>
 								</div>
@@ -78,10 +81,13 @@
 
 		</div>
 
-		<script
-		  src="https://code.jquery.com/jquery-3.6.0.js"
-		  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-		  crossorigin="anonymous">
+		<!-- jQuery CDN -->
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+		<!-- AOS Initialization -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			  AOS.init();
 		</script>
 
 	</body>
