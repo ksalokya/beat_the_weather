@@ -120,6 +120,7 @@ body {
 }
 
 .forecast-container .forecast.today .degree .forecast-icon img{
+  margin-left: 20px;
   width: 110px;
 }
 
@@ -129,6 +130,13 @@ body {
   }
   .forecast-container .forecast.today .degree .forecast-icon img{
     width: 100px;
+    margin-left: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .forecast-container .forecast.today .degree .forecast-icon img{
+    margin-left: 40%;
   }
 }
 
