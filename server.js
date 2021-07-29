@@ -51,12 +51,12 @@ app.get("/",(req,res)=>{
                       country: data.city.country,
 
                       linkIcon: wurl,
-                      temp: data.list[index].main.temp,
+                      temp: Math.round(data.list[index].main.temp * 10)/10,
                       humidity:data.list[index].main.humidity,
                       wind:data.list[index].wind.speed,
 
-                      maxTemp:data.list[index].main.temp_max,
-                      minTemp:data.list[index].main.temp_min,
+                      maxTemp: Math.round(data.list[index].main.temp_max * 10)/10,
+                      minTemp:Math.round(data.list[index].main.temp_min * 10)/10,
                     };
 
                     weatherReport.push(temp_data);

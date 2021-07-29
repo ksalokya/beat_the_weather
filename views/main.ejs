@@ -59,7 +59,7 @@
 							</div>
 						</div>
 
-						<% for (var i=1; i<5; i++) { %>
+						<% for (var i=1; i<6; i++) { %>
 
 							<div class="forecast" data-aos="flip-right"  data-aos-delay="700">
 								<div class="forecast-header">
@@ -75,20 +75,6 @@
 							</div>
 
 						<%}%>
-
-						<div class="forecast last-item" data-aos="flip-right"  data-aos-delay="700">
-							<div class="forecast-header">
-								<div class="day"><%=weatherData[5].day%></div>
-							</div>
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="<%=weatherData[5].linkIcon%>" alt="weather-icon" width=48>
-								</div>
-								<div class="degree"><%=weatherData[5].maxTemp%><sup>o</sup>C</div>
-								<small><%=weatherData[5].minTemp%><sup>o</sup></small>
-							</div>
-						</div>
-
 
 					</div>
 				</div>

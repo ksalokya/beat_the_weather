@@ -69,7 +69,7 @@ body {
     width: 50%;
     float: left;
   }
-  .forecast-container .last-item{
+  .forecast-container .forecast:nth-child(6){
     margin-left: 25%;
   }
 }
@@ -120,8 +120,14 @@ body {
 }
 
 .forecast-container .forecast.today .degree .forecast-icon img{
-  margin-left: 20px;
+  margin-left: 30px;
   width: 110px;
+}
+
+@media (max-width: 990px) {
+  .forecast-container .forecast.today .degree .forecast-icon img{
+    margin-left: 200px;
+  }
 }
 
 @media (max-width: 720px) {
