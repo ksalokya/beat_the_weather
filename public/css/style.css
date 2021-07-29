@@ -1,13 +1,13 @@
 body {
   background-image: url(https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
+  background-position: center;
+
   font-family: "Roboto", "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
-
 }
-
 
 .hero {
   background-size: cover;
@@ -69,6 +69,7 @@ body {
     width: 50%;
     float: left;
   }
+
 }
 
 .forecast-container .forecast.today {
@@ -85,17 +86,18 @@ body {
 }
 
 .forecast-container .forecast.today .forecast-header .day {
+  font-size: 0.9rem;
   float: left;
 }
 
 .forecast-container .forecast.today .forecast-header .date {
+  font-size: 0.9rem;
   float: right;
 }
 
 .forecast-container .forecast.today .forecast-content {
   text-align: left;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 15px;
 }
 
 .forecast-container .forecast.today .location {
@@ -110,8 +112,17 @@ body {
 }
 
 .forecast-container .forecast.today .degree .num {
-  font-size: 4rem;
-  margin-right: 30px;
+  font-size: 3.5rem;
+  margin-right: 45px;
+}
+
+@media (max-width: 720px) {
+  .forecast-container .forecast.today .degree .num{
+    font-size: 2.8rem !important;
+  }
+  .forecast-container .forecast.today .degree .forecast-icon img{
+    width: 100px;
+  }
 }
 
 .forecast-container .forecast.today span {
@@ -160,4 +171,20 @@ body {
 .forecast-container .forecast .forecast-content small {
   font-size: 16px;
   font-size: 1.5em;
+}
+
+.footer{
+  color:#A9C9FF;
+  font-size: 1.2rem;
+
+  text-align: center;
+
+  margin-top: 10%;
+}
+
+@media (max-width: 720px){
+  .footer{
+    margin-top: 2%;
+    font-size: 0.9rem;
+  }
 }
