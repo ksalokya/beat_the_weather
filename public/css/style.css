@@ -69,7 +69,9 @@ body {
     width: 50%;
     float: left;
   }
-
+  .forecast-container .last-item{
+    margin-left: 25%;
+  }
 }
 
 .forecast-container .forecast.today {
@@ -114,6 +116,11 @@ body {
 .forecast-container .forecast.today .degree .num {
   font-size: 3.5rem;
   margin-right: 45px;
+  margin-top: 20px;
+}
+
+.forecast-container .forecast.today .degree .forecast-icon img{
+  width: 110px;
 }
 
 @media (max-width: 720px) {
