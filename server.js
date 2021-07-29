@@ -38,14 +38,14 @@ app.get("/",(req,res)=>{
 
                   var index = tempArr[i];
 
-                    const temp = data.list[index].dt * 1000;
+                    const tempDate = data.list[index].dt * 1000;
                     const icon = data.list[index].weather[0].icon;
                     const wurl = "http://openweathermap.org/img/wn/" + icon + "@4x.png";
 
                     var temp_data = {
 
-                      day: dateFormat(temp, "dddd"),
-                      date: dateFormat(temp, "mmmm dS"),
+                      day: dateFormat(tempDate, "dddd"),
+                      date: dateFormat(tempDate, "mmmm dS"),
 
                       city: data.city.name,
                       country: data.city.country,
@@ -54,6 +54,7 @@ app.get("/",(req,res)=>{
                       temp: Math.round(data.list[index].main.temp * 10)/10,
                       humidity:data.list[index].main.humidity,
                       wind:data.list[index].wind.speed,
+                      desc: data.list[index].weather[0].description,
 
                       maxTemp: Math.round(data.list[index].main.temp_max * 10)/10,
                       minTemp:Math.round(data.list[index].main.temp_min * 10)/10,

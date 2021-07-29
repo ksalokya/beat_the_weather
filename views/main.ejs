@@ -59,6 +59,7 @@
 								</div>
 								<span><i class="fas fa-tint img"></i><%=weatherData[0].humidity%>%</span>
 								<span><i class="fas fa-wind img"></i><%=weatherData[0].wind%> km/h</span>
+								<span><i class="fas fa-info-circle img"></i><%=weatherData[0].desc%></span>
 							</div>
 						</div>
 
@@ -70,7 +71,8 @@
 								</div>
 								<div class="forecast-content">
 									<div class="forecast-icon">
-										<img src="<%=weatherData[i].linkIcon%>" alt="weather-icon" width=48>
+										<img src="<%=weatherData[i].linkIcon%>" alt="weather-icon" width=48> <br>
+										<span class="desc"><%=weatherData[i].desc%></span>
 									</div>
 									<div class="degree"><%=weatherData[i].maxTemp%><sup>o</sup>C</div>
 									<small><%=weatherData[i].minTemp%><sup>o</sup></small>

@@ -108,7 +108,11 @@ body {
   font-weight: 400;
 }
 
-.forecast-container .forecast.today .degree .num, .forecast-container .forecast.today .degree .forecast-icon {
+.forecast-container .forecast.today .degree .num {
+  display: inline-block;
+  vertical-align: middle;
+}
+.forecast-container .forecast.today .degree .forecast-icon{
   display: inline-block;
   vertical-align: middle;
 }
@@ -120,7 +124,7 @@ body {
 }
 
 .forecast-container .forecast.today .degree .forecast-icon img{
-  margin-left: 30px;
+  margin-left: 80px;
   width: 110px;
 }
 
@@ -140,9 +144,9 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
   .forecast-container .forecast.today .degree .forecast-icon img{
-    margin-left: 40%;
+    margin-left: 50%;
   }
 }
 
@@ -154,6 +158,11 @@ body {
   margin-right: 5px;
   vertical-align: middle;
 }
+
+.forecast-container .forecast span{
+  text-transform: capitalize;
+}
+
 
 @media screen and (max-width: 990px) {
   .forecast-container .forecast.today {
