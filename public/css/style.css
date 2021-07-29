@@ -150,7 +150,7 @@ body {
   margin-right: 20px;
 }
 
-.forecast-container .forecast.today span img {
+.forecast-container .forecast.today span .img {
   margin-right: 5px;
   vertical-align: middle;
 }
