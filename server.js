@@ -27,9 +27,9 @@ const id= process.env.ID;
 var weatherReport = [];
 const tempArr = [0,5,13,21,29,37];
 
-if(checkError){
-  city = "Mumbai";
-}
+// if(checkError){
+//   city = "Mumbai";
+// }
 
 app.get("/",(req,res)=>{
 
