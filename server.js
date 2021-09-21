@@ -21,12 +21,23 @@ app.use(express.json());
 app.use(express.static("public"));
 
 var city = "Mumbai";
+var checkError = false;
 const id= process.env.ID;
 
 var weatherReport = [];
 const tempArr = [0,5,13,21,29,37];
 
+if(checkError){
+  city = "Mumbai";
+}
+
 app.get("/",(req,res)=>{
+
+    if(checkError){
+      city="Mumbai";
+      weatherReport.length = 0;
+    }
+
     (async () => {
     await fetch("https://api.openweathermap.org/data/2.5/forecast?q="+city+"&units=metric&appid="+id)
         .then((response) => response.json())
@@ -63,6 +74,7 @@ app.get("/",(req,res)=>{
                     weatherReport.push(temp_data);
                 }
 
+                checkError = false;
 
                 res.render('main', {
                   weatherData:weatherReport,
@@ -94,9 +106,12 @@ app.get("/",(req,res)=>{
                       weatherReport.push(temp_data);
                     }
 
+                    checkError = true;
+
                     res.render('main', {
                       weatherData:weatherReport
                     });
+
             }
         })
         .catch((err) => console.log(`Error: ${err}`));
