@@ -2,4 +2,4 @@
 ### Used Openweathermap API with dynamic updates, 5 day forecast and city search option.
 ### Website - [Click Here](https://dynamicweatherforecast.herokuapp.com/)
 
-#### Note - This is an improved version of my previous work. [Repo](https://github.com/ksalokya/weather)
+#### This is an improved version of my previous work. [Repository](https://github.com/ksalokya/weather)
