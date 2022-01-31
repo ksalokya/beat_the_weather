@@ -25,7 +25,7 @@ var checkError = false;
 const id= process.env.ID;
 
 var weatherReport = [];
-const tempArr = [0,5,13,21,29,37];
+const tempArr = [0,7,14,23,31,39];
 
 app.get("/",(req,res)=>{
 
