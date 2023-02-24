@@ -1,12 +1,15 @@
 body {
   background-image: url(https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-size: cover;
   background-position: center;
-
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
+  overflow: hidden !important;
 }
 
 .hero {
@@ -14,6 +17,12 @@ body {
   padding: 70px 0;
   min-height: 350px;
   margin-top: 3%;
+}
+
+@media screen and (min-height: 800px) {
+  .hero {
+    margin-top: 10%;
+  }
 }
 
 .find-location {
@@ -37,19 +46,15 @@ body {
   padding: 0 40px;
 }
 
-
 .forecast-container {
   width: 100%;
   background-color: #A9C9FF;
   background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
-
   display: table;
   table-layout: fixed;
   width: 100%;
-
   overflow: hidden;
   border-radius: 10px;
-
   margin-top: -100px;
   margin-bottom: 50px;
 }
@@ -70,7 +75,8 @@ body {
     width: 50%;
     float: left;
   }
-  .forecast-container .forecast:nth-child(6){
+
+  .forecast-container .forecast:nth-child(6) {
     margin-left: 25%;
   }
 }
@@ -113,7 +119,8 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
-.forecast-container .forecast.today .degree .forecast-icon{
+
+.forecast-container .forecast.today .degree .forecast-icon {
   display: inline-block;
   vertical-align: middle;
 }
@@ -124,29 +131,30 @@ body {
   margin-top: 20px;
 }
 
-.forecast-container .forecast.today .degree .forecast-icon img{
+.forecast-container .forecast.today .degree .forecast-icon img {
   margin-left: 50px;
   width: 110px;
 }
 
 @media (max-width: 990px) {
-  .forecast-container .forecast.today .degree .forecast-icon img{
+  .forecast-container .forecast.today .degree .forecast-icon img {
     margin-left: 200px;
   }
 }
 
 @media (max-width: 720px) {
-  .forecast-container .forecast.today .degree .num{
+  .forecast-container .forecast.today .degree .num {
     font-size: 2.8rem !important;
   }
-  .forecast-container .forecast.today .degree .forecast-icon img{
+
+  .forecast-container .forecast.today .degree .forecast-icon img {
     width: 100px;
     margin-left: 100%;
   }
 }
 
 @media (max-width: 390px) {
-  .forecast-container .forecast.today .degree .forecast-icon img{
+  .forecast-container .forecast.today .degree .forecast-icon img {
     margin-left: 50%;
   }
 }
@@ -160,7 +168,7 @@ body {
   vertical-align: middle;
 }
 
-.forecast-container .forecast span{
+.forecast-container .forecast span {
   text-transform: capitalize;
 }
 
@@ -204,8 +212,8 @@ body {
   font-size: 1.5em;
 }
 
-.footer{
-  color:#A9C9FF;
+.footer {
+  color: #A9C9FF;
   font-size: 1.2rem;
 
   text-align: center;
@@ -213,8 +221,8 @@ body {
   margin-top: 7%;
 }
 
-@media (max-width: 720px){
-  .footer{
+@media (max-width: 720px) {
+  .footer {
     margin-top: 2%;
     font-size: 0.9rem;
   }
